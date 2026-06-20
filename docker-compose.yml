@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  daihuo-jianshou:
+    image: ghcr.io/a164162007-byte/daihuo-jianshou:latest
+    container_name: daihuo-jianshou
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # 数据持久化：数据库 + 上传文件 + 输出视频
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production

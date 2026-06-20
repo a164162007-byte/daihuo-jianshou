@@ -1,0 +1,30 @@
+# 依赖
+node_modules
+.pnpm-store
+
+# Next.js 构建
+.next
+out
+
+# 测试
+coverage
+e2e
+
+# 数据目录（Docker 中通过卷挂载持久化）
+data
+
+# Git
+.git
+.github
+
+# IDE
+.vscode
+.idea
+
+# 杂项
+.DS_Store
+*.pem
+.claude
+.vercel
+*.tsbuildinfo
+next-env.d.ts
